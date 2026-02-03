@@ -38,7 +38,7 @@ ssafy_15_study
 │   └─ ...
 ├─ OOO
 │   └─ ...
-└─ README.md```
+└─ README.md
 
 
 > 플랫폼 / 문제 번호 기준으로 관리합니다.
@@ -48,9 +48,7 @@ ssafy_15_study
 ## 🔁 Git Workflow (중요 ❗)
 작업은 반드시 아래 순서로 진행합니다.
 
-```bash
 git pull origin main
 git add 파일명
 git commit -m "메시지"
 git push origin main
-```
