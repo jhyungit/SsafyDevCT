@@ -33,7 +33,7 @@ SSAFY 15기 구성원들이 함께 **알고리즘 문제 해결 능력을 향상
 ssafy_15_study
 ├─ jeonghyunLee
 │   ├─ 20260208
-│   │     └─ BOJ_16926.java
+│   │     └─ BOJ_16926.py
 │   └─ ...    
 ├─ chaeeunYoo
 │   ├─ 20260208
@@ -41,7 +41,7 @@ ssafy_15_study
 │   └─ ...
 ├─ songheeHong
 │   ├─ 20260208
-│   │     └─ BOJ_16926.java
+│   │     └─ BOJ_16926.py
 │   └─ ...
 ├─ bogyeongJeong
 │   ├─ 20260208
