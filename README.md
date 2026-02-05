@@ -31,19 +31,19 @@ SSAFY 15기 구성원들이 함께 **알고리즘 문제 해결 능력을 향상
 ## 📂 Repository Structure
 ```text
 ssafy_15_study
-├─ 이정현
+├─ jeonghyunLee
 │   ├─ 20260208
 │   │     └─ BOJ_16926.java
 │   └─ ...    
-├─ 유채은
+├─ chaeeunYoo
 │   ├─ 20260208
 │   │     └─ BOJ_16926.java
 │   └─ ...
-├─ 홍송희
+├─ songheeHong
 │   ├─ 20260208
 │   │     └─ BOJ_16926.java
 │   └─ ...
-├─ 정보경
+├─ bogyeongJeong
 │   ├─ 20260208
 │   │     └─ BOJ_16926.java
 │   └─ ...
