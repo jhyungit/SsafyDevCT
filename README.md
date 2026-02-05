@@ -48,7 +48,7 @@ ssafy_15_study
 │   │     └─ BOJ_16926.java
 │   └─ ...
 └─ README.md
-
+```
 
 > 날짜별 / 문제 번호 기준으로 관리합니다.
 마감일을 기준으로 폴더를 생성한 후, 해당 폴더 안에 소스 코드를 첨부하여 등록해 주세요.
@@ -57,7 +57,9 @@ ssafy_15_study
 ## 🔁 Git Workflow (중요 ❗)
 작업은 반드시 아래 순서로 진행합니다.
 
+```bash
 git pull origin main
 git add 파일명
 git commit -m "메시지"
 git push origin main
+```
