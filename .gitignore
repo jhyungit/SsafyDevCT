@@ -119,4 +119,10 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# VS Code 무시
+.vscode/
+
+# IntelliJ 무시
+.idea/
+*.iml
 # End of https://www.toptal.com/developers/gitignore/api/eclipse,java,windows
