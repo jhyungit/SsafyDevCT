@@ -1,4 +1,4 @@
-# [Java & 빌드 결과물]
+# [Java & Build Artifacts]
 *.class
 *.log
 *.jar
@@ -7,23 +7,26 @@
 *.zip
 *.tar.gz
 *.rar
-# 빌드 결과 폴더 (이클립스는 bin, 인텔리제이는 out)
+hs_err_pid*
+replay_pid*
+
+# Build Folders
 bin/
 out/
 target/
 .gradle/
 build/
+gen/
+.sts4-cache/
 
-# [IntelliJ - 송희님용]
+# [IDE - IntelliJ IDEA]
 .idea/
 *.iml
 *.iws
 *.ipr
-# 인텔리제이에서 생성하는 로컬 설정 파일들
 out/
-gen/
 
-# [Eclipse - 팀원용]
+# [IDE - Eclipse]
 .metadata
 .settings/
 .loadpath
@@ -33,23 +36,43 @@ gen/
 .factorypath
 *.launch
 .externalToolBuilders/
+.buildpath
+.target
+.apt_generated/
+.apt_generated_test/
+.springBeans
+.pydevproject
+.cproject
+.autotools
 
-# [VS Code - 팀원용]
+# [IDE - VS Code]
 .vscode/
 *.code-workspace
 
-# [OS - Windows & macOS]
-# Windows
-Thumbs.db
-[Dd]esktop.ini
-$RECYCLE.BIN/
-# macOS (iMac 사용 시 생성되는 숨김 파일)
+# [OS - macOS]
 .DS_Store
 .AppleDouble
 .LSOverride
 ._*
 
-# Windows shortcuts
+# [OS - Windows]
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.stackdump
 *.lnk
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
 
-# End of https://www.toptal.com/developers/gitignore/api/eclipse,java,windows
+# [Temporary Files]
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
