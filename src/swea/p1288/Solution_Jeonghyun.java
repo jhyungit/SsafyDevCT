@@ -1,10 +1,10 @@
-package swea;
+package swea.p1288;
 
 import java.io.*;
 import java.util.*;
 
 //새로운 불면증 치료법
-public class Solution_1288{
+public class Solution_Jeonghyun{
 	public static void main(String[] args)  throws Exception{
 		BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
 		int test_case = Integer.parseInt(br.readLine().trim());
