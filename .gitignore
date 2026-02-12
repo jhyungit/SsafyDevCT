@@ -49,6 +49,7 @@ $RECYCLE.BIN/
 .LSOverride
 ._*
 
-# [기타]
-hs_err_pid*
-replay_pid*
+# Windows shortcuts
+*.lnk
+
+# End of https://www.toptal.com/developers/gitignore/api/eclipse,java,windows
