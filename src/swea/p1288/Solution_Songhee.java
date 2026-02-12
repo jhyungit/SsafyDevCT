@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class SWEA_1288_새로운불면증치료법 {
+public class Solution_Songhee {
     public static void main(String[] args) throws FileNotFoundException {
         // N의 배수 양 세기. 언제 0-9 숫자 다 보는지
 
