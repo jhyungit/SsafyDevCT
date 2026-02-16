@@ -1,9 +1,10 @@
-package swea.p1288;
+package swea.p1288; //새로운 불면증 치료법
+//https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV18_yw6I9MCFAZN
 
 import java.io.*;
 import java.util.*;
 
-//새로운 불면증 치료법
+
 public class Solution_Jeonghyun{
 	public static void main(String[] args)  throws Exception{
 		BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
