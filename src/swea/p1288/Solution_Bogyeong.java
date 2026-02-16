@@ -23,7 +23,7 @@ public class Solution_Bogyeong {
             }
         }
     }
- 
+
     private static String toRegex(int number) {
         StringBuilder sb = new StringBuilder();
         sb.append("[").append(number).append("]");

@@ -27,7 +27,6 @@ public class Solution_Jeonghyun{
 			}
 			System.out.println("#"+i+" "+ ((n*k)-n));
 		}
-
 	}
 
 }
