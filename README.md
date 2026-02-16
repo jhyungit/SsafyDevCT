@@ -31,23 +31,20 @@ SSAFY 15기 구성원들이 함께 **알고리즘 문제 해결 능력을 향상
 
 ## 📂 Repository Structure
 ```text
-ssafy_15_study
-├─ jeonghyunLee
-│   ├─ 20260212
-│   │     └─ BOJ_16926.py
-│   └─ ...    
-├─ chaeeunYoo
-│   ├─ 20260212
-│   │     └─ BOJ_16926.java
-│   └─ ...
-├─ songheeHong
-│   ├─ 20260212
-│   │     └─ BOJ_16926.py
-│   └─ ...
-├─ bogyeongJeong
-│   ├─ 20260212
-│   │     └─ BOJ_16926.java
-│   └─ ...
+SsafyDevCT
+├─ src
+│   ├─ swea
+│   │   ├─ p1288
+│   │   │    ├─ Jeonghyun.java
+│   │   │    ├─ Chaeeun.java
+│   │   │    ├─ Songhee.java
+│   │   ...  └─ Bogyeong.java
+│   │   
+│   └─ boj
+│       ...
+├─ .classpath
+├─ .gitignore
+├─ .project
 └─ README.md
 ```
 
@@ -61,6 +58,6 @@ ssafy_15_study
 ```bash
 git pull origin main
 git add 파일명
-git commit -m "메시지"
+git commit -m "마감기한" // ex) 20260212
 git push origin main
 ```
