@@ -5,6 +5,8 @@ import java.util.StringTokenizer;
 
 public class Solution_Songhee {
 
+    static Node[] list;
+
     static class Node {
         int parent; // 부모
         int left; // 이진트리라 무조건 두개
@@ -23,11 +25,14 @@ public class Solution_Songhee {
             int v1 = Integer.parseInt(st.nextToken());
             int v2 = Integer.parseInt(st.nextToken());
 
-            Node[] list = new Node[v+1]; // 부모에서 자식
+            list = new Node[v+1]; // 부모에서 자식
+            for(int i=1; i<v+1; i++) {
+                list[i] = new Node(); // null exception 방지
+            }
+
+            st = new StringTokenizer(br.readLine(), " ");
 
             for(int i=0; i<e; i++) {
-                st = new StringTokenizer(br.readLine(), " ");
-
                 int from = Integer.parseInt(st.nextToken());
                 int to = Integer.parseInt(st.nextToken());
 
@@ -40,9 +45,49 @@ public class Solution_Songhee {
                 list[to].parent = from;
             }
 
+            int common = findCommon(v1, v2);
+            int count = getSubTree(common);
+
             // 가장 가까운 조상 번호, 서브 트리 크기
-            System.out.println("#" + tc);
+            System.out.println("#" + tc + " " + common + " " + count);
+        }
+    }
+
+    private static int findCommon(int v1, int v2) {
+        boolean[] check = new boolean[list.length];
+        int common = -1;
+
+        while(list[v1].parent > 0) { // 부모가 없을 때까지
+            int parent = list[v1].parent;
+            check[parent] = true;
+
+            v1 = parent;
         }
 
+        while(list[v2].parent > 0) {
+            int parent = list[v2].parent;
+
+            if(check[parent]) {
+                common = parent;
+                break;
+            }
+
+            v2 = parent;
+        }
+
+        return common;
+    }
+
+    private static int getSubTree(int root) {
+        if(root == 0) {
+            return 0; // 노드 없으면 0개
+        }
+
+        int count = 1; // 본인 포함
+
+        count += getSubTree(list[root].left);
+        count += getSubTree(list[root].right);
+
+        return count;
     }
 }
