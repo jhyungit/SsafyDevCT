@@ -28,36 +28,17 @@ public class Solution_Bogyeong {
 			
 			// 간선 입력받아 저장
 			nodeMap.clear();
-			root = new Node(null, 1);
+			root = new Node(1);
 			nodeMap.put(root.value, root);
 			st = new StringTokenizer(br.readLine());
 			int n;
 			Node parent, child;
 			for (int i = 0; i < E; i++) {
 				n = Integer.parseInt(st.nextToken());
-				parent = nodeMap.get(n);
-				if (parent == null) {
-					parent = new Node(null, n);
-					nodeMap.put(parent.value, parent);
-					if (n == n1) {
-						node1 = parent;
-					} else if (n == n2) {
-						node2 = parent;
-					}
-				}
+				parent = getOrMake(n);
 				n = Integer.parseInt(st.nextToken());
-				child = nodeMap.get(n);
-				if (child == null) {
-					child = new Node(parent, n);
-					nodeMap.put(child.value, child);
-					if (n == n1) {
-						node1 = child;
-					} else if (n == n2) {
-						node2 = child;
-					}
-				} else {
-					child.parent = parent;
-				}
+				child = getOrMake(n);
+				child.parent = parent;
 				parent.setChild(child);
 			}
 			
@@ -68,6 +49,23 @@ public class Solution_Bogyeong {
 		}
 	}
 
+	private static Node getOrMake(int n) {
+		Node node = nodeMap.get(n);
+		if (node != null) {
+			return node;
+		}
+		node = new Node(n);
+		nodeMap.put(node.value, node);
+		
+		if (n == n1) {
+			node1 = node;
+		} else if (n == n2) {
+			node2 = node;
+		}
+
+		return node;
+	}
+
 	private static Node findCommon() {
 		HashSet<Integer> set = new HashSet<Integer>();
 		set.add(node1.value);
@@ -75,11 +73,11 @@ public class Solution_Bogyeong {
 		Node n1 = node1, n2 = node2;
 		while (n1.parent != null && n2.parent != null) {
 			n1 = n1.parent;
-			n2 = n2.parent;
 			if (set.contains(n1.value)) {
 				return n1;
 			}
 			set.add(n1.value);
+			n2 = n2.parent;
 			if (set.contains(n2.value)) {
 				return n2;
 			}
@@ -122,8 +120,8 @@ class Node {
 	int value;
 	Node right;
 	
-	public Node(Node parent, int value) {
-		this.parent = parent;
+	public Node(int value) {
+		this.parent = null;
 		this.left = null;
 		this.value = value;
 		this.right = null;
