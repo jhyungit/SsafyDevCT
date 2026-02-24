@@ -1,3 +1,7 @@
+# 메모리 101,308kb
+# 실행시간 2.943ms
+# 코드길이 1,438
+
 import heapq
 import math
 
