@@ -17,7 +17,7 @@ public class Solution {
 	static PriorityQueue<Integer> left = new PriorityQueue<>(Collections.reverseOrder());
 	static PriorityQueue<Integer> right = new PriorityQueue<>();
 	static int N, center;
-  static final int MOD = 20171109;
+  	static final int MOD = 20171109;
 	
 	public static void main(String args[]) throws Exception{
 		int T = Integer.parseInt(br.readLine());
