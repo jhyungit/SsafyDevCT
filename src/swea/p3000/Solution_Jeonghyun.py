@@ -1,5 +1,8 @@
+# 메모리 101,308kb
+# 실행시간 2.943ms
+# 코드길이 1,438
+
 import heapq
-import math
 
 def find_mid():
     i, num = map(int, input().split())
@@ -27,13 +30,10 @@ def find_mid():
         ans = (ans + (-max_heap[0])) %  20171109
 
     return ans
-    
 
 
 # 테스트 케이스 개수 입력
 test_case = int(input())
-
-
 
 for i in range(test_case):
     mid_value = find_mid()
