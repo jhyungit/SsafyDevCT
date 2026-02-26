@@ -41,7 +41,7 @@ for i in range(test_case):
     print(f"#{i+1} {mid_value}")
 
 
-# 아이디어!
+# 아이디어!!!
 # 배열 [1,2,3,4,5]를 쪼개면
 # [1,2,3], [4,5]로 가능
 # left의 모든 값 <= right의 모든 값
