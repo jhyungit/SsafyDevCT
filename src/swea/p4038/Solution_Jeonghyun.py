@@ -1,3 +1,8 @@
+# https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWIoEJzarUwDFAWN
+# SWEA 4038 단어가 등장하는 횟수
+# Time: 268 ms
+# Memory: 70,136 kb
+
 # 어떻게 하면 제한시간을 초과하지 않을 수 있을까?
 # KMP = Knuth Morris Pratt 알고리즘 (문자열 안에서 어떤 단어가 몇 번 등장하는지 찾는 알고리즘)
 # 시간복잡도 O(N+M) N은 전체 문자열 길이, M은 찾을 문자열 길이
