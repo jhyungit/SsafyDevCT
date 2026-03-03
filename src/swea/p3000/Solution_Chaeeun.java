@@ -1,8 +1,10 @@
-# https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV-fO0s6ARoDFAXT
-# SWEA 3000 중간값 구하기
-# Time: 905 ms
-# Memory: 121,224 kb
-# Approach: PriorityQueue를 사용한 중앙값 업데이트
+package swea.p3000;
+
+// https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV-fO0s6ARoDFAXT
+// SWEA 3000 중간값 구하기
+// Time: 905 ms
+// Memory: 121,224 kb
+// Approach: PriorityQueue를 사용한 중앙값 업데이트
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -10,7 +12,7 @@ import java.util.Collections;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-public class Solution {
+public class Solution_Chaeeun {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static StringBuilder sb = new StringBuilder();
 	static StringTokenizer st;
