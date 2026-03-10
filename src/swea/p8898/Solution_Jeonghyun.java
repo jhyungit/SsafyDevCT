@@ -1,9 +1,9 @@
-// 메모리
-// 294,416 kb
-// 실행시간
-// 5,728 ms
-// 코드길이
-// 1,763
+//290,184 kb
+//메모리
+//5,526 ms
+//실행시간
+//1,881
+//코드길이
 
 package swea.p8898;
 
@@ -22,6 +22,7 @@ public class Solution_Jeonghyun {
 		StringTokenizer st;
 		int T = Integer.parseInt(br.readLine().trim());
 		
+		StringBuilder sb = new StringBuilder();
 		for(int tc = 1; tc <= T; tc++) {
 			cnt = 0;
 			cowZ = new ArrayList<>();
@@ -52,8 +53,11 @@ public class Solution_Jeonghyun {
 			horseZ.sort((a,b) -> a-b);
 			
 			twoPointer();
-			System.out.println("#"+tc+" "+minDist+" "+ cnt);
+			sb.append("#").append(tc).append(" ")
+			.append(minDist).append(" ")
+			.append(cnt).append('\n');
 		}
+		System.out.println(sb);
 	}
 	
 	static void twoPointer() {
