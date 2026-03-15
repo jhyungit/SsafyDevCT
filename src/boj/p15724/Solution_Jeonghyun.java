@@ -1,5 +1,5 @@
 package boj.p15724;
-// 주지
+// 주지수
 //https://www.acmicpc.net/problem/15724
 
 import java.io.*;
