@@ -52,7 +52,10 @@ SsafyDevCT
 │   │   │    ├─ Songhee.java
 │   │   ...  └─ Bogyeong.java
 │   │   
-│   └─ boj
+│   ├─ boj
+│   │   ...
+│   │   
+│   └─ programmers
 │       ...
 ├─ .classpath
 ├─ .gitignore
