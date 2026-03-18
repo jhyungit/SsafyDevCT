@@ -1,7 +1,7 @@
 # 파괴되지 않은 건물
 # https://school.programmers.co.kr/learn/courses/30/lessons/92344
 
-# 2차원 차분 배열 활용
+# 아이디어: 2차원 차분 배열 활용
 def attack(r1, c1, r2, c2, degree, temp):
     # -        +
     # +        -
