@@ -68,7 +68,6 @@ public class Solution_Jeonghyun{
     }
     
     static int sum(int r1, int c1, int r2, int c2) {
-    	System.out.println(Arrays.deepToString(map));
     	return  map[r2][c2] - map[r1-1][c2] - map[r2][c1-1] + map[r1-1][c1-1];
     }
 
