@@ -1,4 +1,6 @@
-class Solution {
+package programmers.p92344;
+
+class Solution_Chaeeun {
     int N, M;
     int[][] diff, board;
         
