@@ -1,7 +1,6 @@
 package boj.p15724;
 // 주지수
 // https://www.acmicpc.net/problem/15724
-
 // 메모리 119336KB
 // 시간 620ms
 
