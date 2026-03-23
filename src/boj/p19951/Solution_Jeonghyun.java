@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 package boj.p19951;
 // 태상이의 훈련소 생활
 //https://www.acmicpc.net/problem/19951
@@ -63,4 +61,3 @@ public class Solution_Jeonghyun{
 	}
 
 }
->>>>>>> 8886a33c053b4817fec40ef955ab601832bb3fca
