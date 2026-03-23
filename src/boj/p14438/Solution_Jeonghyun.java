@@ -1,3 +1,6 @@
+//메모리             시간 
+//61916KB	504ms
+
 package boj.p14438;
 
 import java.util.*;
