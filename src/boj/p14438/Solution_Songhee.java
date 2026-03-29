@@ -3,9 +3,10 @@ package boj.p14438;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
+// 메모리 : 64252kb
+// 시간 : 612ms
 public class Solution_Songhee {
 
     private static int N;
