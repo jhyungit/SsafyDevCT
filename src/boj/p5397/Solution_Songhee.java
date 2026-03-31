@@ -58,10 +58,10 @@ public class Solution_Songhee {
 
             StringBuilder sb = new StringBuilder();
 
-            for (Node n = start; n != null; n = n.next) {
-                if (n.word != ' ') {
-                    sb.append(n.word);
-                }
+            Node n = start.next;
+            while (n != null) {
+                sb.append(n.word);
+                n = n.next;
             }
 
             System.out.println(sb);
