@@ -9,7 +9,7 @@ package boj.p14438;
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class Solution_Chaeeun {
     static int N, M;
     static int a[];
 
