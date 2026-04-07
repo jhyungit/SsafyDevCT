@@ -1,12 +1,12 @@
 // 메모리 시간
 // 34404KB	544ms
 
-package javaAlgo;
+package boj.p13424;
 
 import java.io.*;
 import java.util.*;
 
-public class Main_13424 {
+public class Solution_Jeonghyun {
 	static int T, N, M, K; // 테스트케이스, 방 개수, 비밀통로 수, 친구 수
 	static int[] dist;
 	static int[] sumDist;
