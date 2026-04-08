@@ -3,8 +3,6 @@ package boj.p13424;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
@@ -23,15 +21,22 @@ public class Solution_Bogyeng {
 		StringTokenizer st;
 		
 		int T = Integer.parseInt(br.readLine().trim());
+		
+		adjList = new ArrayList[101];
+		for (int i = 1; i < adjList.length; i++) {
+			adjList[i] = new ArrayList<Node>();
+		}
+		friends = new int[100];
+		dist = new int[100][101];
+		
 		StringBuilder sb = new StringBuilder();
 		for (int t = 0; t < T; t++) {
 			st = new StringTokenizer(br.readLine());
 			N = Integer.parseInt(st.nextToken());
 			M = Integer.parseInt(st.nextToken());
 			
-			adjList = new ArrayList[N+1];
-			for (int i = 1; i < adjList.length; i++) {
-				adjList[i] = new ArrayList<Node>();
+			for (int i = 1; i <= N; i++) {
+				adjList[i].clear();
 			}
 			
 			for (int i = 0; i < M; i++) {
@@ -45,7 +50,6 @@ public class Solution_Bogyeng {
 			}
 			
 			K = Integer.parseInt(br.readLine().trim());
-			friends = new int[K];
 			
 			st = new StringTokenizer(br.readLine());
 			for (int i = 0; i < K; i++) {
@@ -58,13 +62,13 @@ public class Solution_Bogyeng {
 	}
 
 	private static int findMinNode() {
-		dist = new int[K][N+1];
 		for (int i = 0; i < K; i++) {
-			Arrays.fill(dist[i], INF);
+			for (int j = 1; j <= N; j++) {
+				dist[i][j] = INF;
+			}
 			dijk(i);
 		}
 		
-
 		int minValue = Integer.MAX_VALUE;
 		int min = 0;
 		for (int j = 1; j <= N; j++) {
@@ -84,11 +88,13 @@ public class Solution_Bogyeng {
 	private static void dijk(int k) {
 		int start = friends[k];
 		int[] d = dist[k];
-		dist[k][start] = 0;
+		d[start] = 0;
 		
-		boolean[] visited = new boolean[N+1];
 		PriorityQueue<Node> pq = new PriorityQueue<Node>((n1, n2) -> Integer.compare(n1.c, n2.c));
 		pq.offer(new Node(start, 0));
+		
+		boolean[] visited = new boolean[N+1];
+		visited[start] = true;
 		
 		while (!pq.isEmpty()) {
 			Node n = pq.poll();
@@ -104,7 +110,6 @@ public class Solution_Bogyeng {
 			
 			visited[n.v] = true;
 		}
-		
 	}
 
 	static class Node {
