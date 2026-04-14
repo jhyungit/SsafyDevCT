@@ -4,7 +4,6 @@
 import heapq
 
 INF = float("inf")
-
 # 출발지 -> 산봉우리 경로 중
 # 경로 내 최대 간선 값의 최소 구하기  
 def dijkstra(n, gates, summits, graph):
