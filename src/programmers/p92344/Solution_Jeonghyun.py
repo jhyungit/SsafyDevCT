@@ -30,7 +30,7 @@ def solution(board, skill):
             attack(r1, c1, r2, c2, degree, temp)
         else: # 회복
             recover(r1, c1, r2, c2, degree, temp)
-            
+        
     # 가로 누적
     for i in range(r+1):
         for j in range(1,c+1):
