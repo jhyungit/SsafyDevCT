@@ -71,6 +71,8 @@ public class Solution_Songhee {
             }
         }
 
+        dijkstra();
+
         return new int[]{minSummit, minIntensity};
     }
 
