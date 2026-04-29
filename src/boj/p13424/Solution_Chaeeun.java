@@ -9,7 +9,7 @@ package boj.p13424;
 import java.util.*;
 import java.io.*;
 
-public class Main {
+class Main {
 	static class Edge{ 
 		// 그래프 저장을 위한 Edge
 		int end;
