@@ -1,3 +1,5 @@
+package programmers.p388352;
+
 import java.io.*;
 import java.util.*;
 
