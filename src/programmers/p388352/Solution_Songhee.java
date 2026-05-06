@@ -1,6 +1,7 @@
 package programmers.p388352;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Solution_Songhee {
@@ -21,7 +22,27 @@ public class Solution_Songhee {
         result = new int[5];
         // 정답 다 구해놓고 맞을 경우에만 카운트 올리기
         combination(0, 1, n);
-
+        
+        for(int[] pass : list) {
+        	int total = 0;
+        	
+        	for (int i = 0; i < q.length; i++) {
+				int count = 0;
+				
+				for(int num : pass) {
+					for(int tmp : q[i]) {
+						if(num == tmp) {
+							count++;
+							break;
+						}
+					}
+				}
+				
+				if(count == ans[i]) total++;
+			}
+        	
+        	if(total == ans.length) answer++;
+        }
 
         return answer;
     }
