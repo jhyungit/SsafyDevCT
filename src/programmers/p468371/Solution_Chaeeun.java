@@ -1,4 +1,6 @@
-class Solution {
+package programmers.p468371;
+
+class Solution_Chaeeun {
     int[][] signals;
     int[] lengths;
     int traficLightCnt;
