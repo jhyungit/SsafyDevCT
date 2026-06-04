@@ -2,13 +2,13 @@
 
 def solution(info, n, m):
     INF = float("inf")
-    dp = [INF] * n # dp[a_sum] = B 흔적 합의 최솟값
+    dp = [INF] * n # dp[a_sum] = A합이 a_sum일 때 가능한 B합의 최솟값
     dp[0] = 0
 
     for a, b in info:
         ndp = [INF] * n # 이 물건까지 반영한 새 상태
-        for a_sum in range(n):
-            if dp[a_sum] == INF:    # 도달 못한 상태는 무시
+        for a_sum in range(n): # A합 차례로 확인
+            if dp[a_sum] == INF: # 도달 못한 상태는 무시
                 continue
             b_sum = dp[a_sum]
 
