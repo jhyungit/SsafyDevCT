@@ -1,6 +1,6 @@
 // https://school.programmers.co.kr/learn/courses/30/lessons/43163?language=java
 
-// 유형    : DFS/BFS
+// 유형    : BFS
 // 자료구조: ArrayDeque
 // 종료조건: 못 바꾸거나 target일 때
 // 무엇이 노드인가: 단어
@@ -11,11 +11,11 @@ class Solution {
     public int solution(String begin, String target, String[] words) {
         int answer = 0;
 
-        answer = dfs(begin, target, words);
+        answer = bfs(begin, target, words);
         return answer;
     }
     
-    private int dfs(String begin, String target, String[] words){
+    private int bfs(String begin, String target, String[] words){
         Deque<int[]> dq = new ArrayDeque<>();
         int n = words.length;
         boolean[] visited = new boolean[n];
