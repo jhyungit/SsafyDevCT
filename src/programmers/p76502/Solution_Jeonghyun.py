@@ -24,11 +24,7 @@ def is_right(now):
             stack.pop()
             stack.pop()
             
-    if len(stack):
-        return 0
-    else:
-        return 1
-    return 0
+    return 0 if len(stack) else 1
 
 def solution(s):
     answer = 0
